@@ -7,3 +7,9 @@ resource "aws_vpc" "Test-vpc" {
     environment = "production"
   }
 }
+resource "aws_internet_gateway" "default" {
+  vpc_id = aws_vpc.Test-vpc.id
+  tags = {
+    Name = "Test-IGW"
+  }
+}
