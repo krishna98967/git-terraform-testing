@@ -5,7 +5,7 @@ resource "aws_vpc" "Test-vpc" {
     Name        = "gitvpc"
     Owner       = "Krishna Reddy"
     environment = "production"
-   costcenter = 9090
+   costcenter = 8500
   }
 }
 resource "aws_internet_gateway" "default" {
